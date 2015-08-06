@@ -1,0 +1,5 @@
+librocksdb (3.12.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- zeb <zeb@botify.com>  Wed, 05 Aug 2015 19:16:52 +0200

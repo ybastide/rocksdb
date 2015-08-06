@@ -1,0 +1,31 @@
+Source: librocksdb
+Priority: optional
+Maintainer: zeb <zeb@botify.com>
+Build-Depends:
+ debhelper (>= 8.0.0),
+ libsnappy-dev,
+ liblz4-dev,
+ libz-dev,
+ libbz2-dev,
+ libgflags-dev
+Standards-Version: 3.9.4
+Section: libs
+Homepage: http://rocksdb.org/
+#Vcs-Git: git://git.debian.org/collab-maint/librocksdb.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/librocksdb.git;a=summary
+
+Package: librocksdb-dev
+Section: libdevel
+Architecture: any
+Depends: librocksdb (= ${binary:Version})
+Description: Embeddable persistent key-value store for fast storage.
+ RocksDB is an embeddable persistent key-value store for fast storage.
+ .
+ This package contains the development files and static library.
+
+Package: librocksdb
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Embeddable persistent key-value store for fast storage.
+ RocksDB is an embeddable persistent key-value store for fast storage.

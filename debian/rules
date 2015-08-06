@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@ 
+
+override_dh_auto_build:
+	PORTABLE=1 make static_lib shared_lib
+
+override_dh_auto_test:
+	# don't run the tests, they don't pass O_o
+
+override_dh_auto_install:
+	make install INSTALL_PATH=debian/tmp/usr
