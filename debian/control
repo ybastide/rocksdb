@@ -1,4 +1,4 @@
-Source: librocksdb
+Source: rocksdb
 Priority: optional
 Maintainer: zeb <zeb@botify.com>
 Build-Depends:
@@ -23,7 +23,7 @@ Description: Embeddable persistent key-value store for fast storage.
  .
  This package contains the development files and static library.
 
-Package: librocksdb
+Package: librocksdb1
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}

@@ -10,10 +10,23 @@ git -am "Initial import."
 # So this instead:
 dpkg-buildpackage -b -rfakeroot
 
+## TODO
+librocksdb-bin (at least ldb)
+
 ## rules
 
-Add:
 ```makefile
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+export DEB_CXXFLAGS_MAINT_OPTIONS = -fPIC
+export DEB_LDFLAGS_MAINT_OPTIONS = -fPIC
+
+%:
+	dh $@ 
+
 override_dh_auto_build:
 	PORTABLE=1 make static_lib shared_lib
 
