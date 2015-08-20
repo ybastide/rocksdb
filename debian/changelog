@@ -1,4 +1,10 @@
-rocksdb (3.12.1-1) unstable; urgency=low
+rocksdb (3.13.0-1) UNRELEASED; urgency=low
+
+  * Upgrade to latest version.
+
+ -- zeb <zeb@botify.com>  Thu, 20 Aug 2015 11:58:12 +0200
+
+rocksdb (3.12.0-1) UNRELEASED; urgency=low
 
   * Initial release
 

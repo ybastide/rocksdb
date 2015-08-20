@@ -17,7 +17,7 @@ Homepage: http://rocksdb.org/
 Package: librocksdb-dev
 Section: libdevel
 Architecture: any
-Depends: librocksdb (= ${binary:Version})
+Depends: librocksdb1 (= ${binary:Version})
 Description: Embeddable persistent key-value store for fast storage.
  RocksDB is an embeddable persistent key-value store for fast storage.
  .
