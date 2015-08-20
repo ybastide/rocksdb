@@ -1,0 +1,7 @@
+files
+librocksdb-dev/
+librocksdb1/
+tmp/
+*.substvars
+*.log
+*.debhelper
